@@ -1,0 +1,48 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build outputs and cache
+dist/
+build/
+.cache/
+.vite/
+tmp/
+temp/
+
+# Environment specific
+package-lock.json
+.env.local
+.env.*.local
+
+# OS specific
+Thumbs.db
+desktop.ini
+
+# Screenshots and temporary files
+*.png.bak
+*.jpg.bak
+screenshot_*
+temp_*
+backup_*
