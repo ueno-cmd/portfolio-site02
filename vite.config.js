@@ -5,6 +5,14 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        webapps: 'web-apps.html',
+        mlprojects: 'ml-projects.html',
+        github: 'github-repos.html'
+      }
+    }
   },
   server: {
     port: 3000,
