@@ -258,7 +258,7 @@ section
 .section {
     padding: 30px 15px;
 }
-.section.section-secounday {
+.section.section-secondary {
     background: hsl(0, 0%, 94%);
 }
 .section-headline {
