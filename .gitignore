@@ -46,3 +46,6 @@ desktop.ini
 screenshot_*
 temp_*
 backup_*
+
+# Claude Code instructions
+CLAUDE.md
