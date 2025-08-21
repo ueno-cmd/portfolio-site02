@@ -1,13 +1,11 @@
 import './style.css'
 
-console.log('Portfolio site loaded successfully')
-
 // Form submission handler
 const form = document.querySelector('.form')
 if (form) {
     form.addEventListener('submit', (e) => {
         e.preventDefault()
-        alert('Thank you for your message! We will get back to you soon.')
+        // Form submission handled
     })
 }
 

@@ -41,12 +41,215 @@ grid
 .grid-item {
     list-style: none;
 }
+
+/* Page Navigation */
+.page-navigation {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.page-navigation a {
+    color: #495057;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: linear-gradient(135deg, rgba(73, 80, 87, 0.1), rgba(52, 58, 64, 0.1));
+    border-radius: 6px;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(73, 80, 87, 0.2);
+}
+
+.page-navigation a:hover {
+    background: linear-gradient(135deg, #495057, #343a40);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 @media screen and (max-width: 768px){
     .grid-col-2,
     .grid-col-3,
     .grid-col-4 {
         grid-template-columns: 1fr;
     }
+}
+
+/* Project Labels */
+.project-label {
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.project-label.java { background: #ED8B00; }
+.project-label.javascript { background: #F7DF1E; color: black; }
+.project-label.python { background: #3776AB; }
+.project-label.individual { background: #4A90E2; }
+.project-label.personal { background: #50C878; }
+.project-label.portfolio { background: #757fb5; }
+.project-label.portfolio-orange { background: #FF6B35; }
+.project-label.event { background: #28A745; }
+.project-label.landing { background: #DC3545; }
+.project-label.smbc { background: #50C878; }
+.project-label.atmacup { background: #FF6B35; }
+
+/* Buttons */
+.button-github {
+    background: #333;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.button-demo { 
+    font-size: 0.9rem; 
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.button-demo.blue { background: #4A90E2; }
+.button-demo.green { background: #50C878; }
+.button-demo.orange { background: #FF6B35; }
+.button-demo.green-dark { background: #28A745; }
+.button-demo.red { background: #DC3545; }
+.button-demo.purple { background: #757fb5; }
+.button-demo.disabled { background: #666; }
+
+/* Page Hero Sections */
+.page-hero-github {
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 80px;
+}
+
+.page-hero-github h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.page-hero-github p {
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Section Headers */
+.section-header {
+    color: #495057;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Contact Section */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.contact-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: inline-block;
+}
+
+.github-icon {
+    width: 80px;
+    height: 80px;
+    fill: #333;
+    margin-bottom: 20px;
+}
+
+.contact-card h2 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Utility Classes */
+.max-width-1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.return-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #757fb5;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Tech Tags */
+.tech-tag-pill {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px;
 }
 
 /* 
@@ -125,6 +328,10 @@ header
 .header-navitem > a:hover {
     border-bottom: 2px solid #333;
 }
+.header-navitem > a.active {
+    border-bottom: 2px solid #757fb5;
+    color: #757fb5;
+}
 @media screen and (max-width: 768px){
     .header {
         font-size: 12px;
@@ -139,7 +346,7 @@ hero
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background-image: url('/assets/images/pexels-mikebirdy-190537.jpg');
+    background-image: url('public/assets/images/pexels-mikebirdy-190537.jpg');
     background-size: cover;
     background-position: center;
     filter: sepia(0.3) contrast(1.2) brightness(0.9);

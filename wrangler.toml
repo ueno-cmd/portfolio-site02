@@ -1,5 +1,5 @@
 name = "portfolio-multipage"
 compatibility_date = "2025-01-15"
 
-[assets]
-directory = "./dist"
+# Static site configuration (no worker script needed)
+assets = { directory = "./dist" }
