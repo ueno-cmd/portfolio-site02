@@ -32,7 +32,6 @@ tmp/
 temp/
 
 # Environment specific
-package-lock.json
 .env.local
 .env.*.local
 
